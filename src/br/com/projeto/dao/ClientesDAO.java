@@ -27,7 +27,7 @@ public class ClientesDAO {
     public void cadastrarCliente(Clientes obj){
         try {
             //1 passo - criar o comando sql
-            String sql= "insert into tb_clientes(nome,rg,cpf,email,telefone,celular,cep,encereco,numero,complemento,bairro,cidade,estado)"
+            String sql= "insert into tb_clientes(nome,rg,cpf,email,telefone,celular,cep,endereco,numero,complemento,bairro,cidade,estado)"
                     +"values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
             
             //2 passo - conectar o bd e organizar o comando sql
